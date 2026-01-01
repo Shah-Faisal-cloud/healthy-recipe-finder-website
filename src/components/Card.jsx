@@ -1,7 +1,7 @@
 import iconServings from '../assets/images/icon-servings.svg'
 import iconPrepTime from '../assets/images/icon-prep-time.svg'
 import iconCookTime from '../assets/images/icon-cook-time.svg'
-import ButtonLink from './ButtonLInk'
+import ButtonLink from './ButtonLink'
 const Card = ({ element }) => {
     return (
         <div className='p-2 bg-white rounded-lg shadow-xl'>

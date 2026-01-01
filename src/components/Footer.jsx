@@ -1,4 +1,4 @@
-import ButtonLink from "./ButtonLInk"
+import ButtonLink from "./ButtonLink"
 import imagePatternFork from '../assets/images/pattern-fork.svg'
 import imagePatternKnife from '../assets/images/pattern-knife.svg'
 import iconInstagram from '../assets/images/icon-instagram.svg'

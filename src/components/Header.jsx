@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router'
 import logo from '../assets/images/logo.svg'
 import hamburgerIcon from '../assets/images/icon-hamburger-menu.svg'
-import ButtonLink from './ButtonLInk'
+import ButtonLink from './ButtonLink'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 
