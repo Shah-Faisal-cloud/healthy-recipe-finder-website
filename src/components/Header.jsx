@@ -28,7 +28,7 @@ const Header = () => {
                     <li className=""><NavLink to={'/'} className="navlink">Home</NavLink></li>
                     <li className=""><NavLink to={'/about'} className="navlink">About</NavLink></li>
                     <li className=""><NavLink to={'/recipes'} className="navlink">Recipes</NavLink></li>
-                    <li className="md:hidden"><ButtonLink route={'#'} text={'Browse Recipes'} className='rounded-lg' /></li>
+                    <li className="md:hidden"><ButtonLink route={'/recipes'} text={'Browse Recipes'} className='rounded-lg' /></li>
                 </ul>
             </nav>
             <button className={`bg-mint-light px-2.5 cursor-pointer ${isMenuOpen ? 'border-green-deep' : 'border-transparent'} py-2 border-2 rounded-xs md:hidden`} onClick={toggleMenu}><img src={hamburgerIcon} alt="Hamburger Icon For Opening Menu" /></button>
