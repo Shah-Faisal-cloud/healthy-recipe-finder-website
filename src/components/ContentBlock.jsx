@@ -9,7 +9,7 @@ const ContentBlock = ({
     paraClasses
 }) => {
     const Tag = level;
-    const MotionTag = motion(Tag)
+    const MotionTag = motion.create(Tag)
     return (
         <div className={`flex flex-col gap-y-4 justify-center ${classname}`}>
             {topElement && topElement}

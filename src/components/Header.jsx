@@ -25,9 +25,9 @@ const Header = () => {
             </NavLink>
             <nav className={`max-md:absolute max-md:top-full max-md:inset-x-6 max-md:bg-white md:block max-sm:px-4 max-md:px-8 max-md:py-6 max-md:rounded-lg max-md:shadow-xl ${isMenuOpen ? 'max-md:block' : 'max-md:hidden'}`}>
                 <ul className="flex flex-col text-slate-dark font-semibold max-md:gap-y-3 md:flex-row md:gap-x-6 lg:gap-x-10">
-                    <li className=""><NavLink to={'/'}>Home</NavLink></li>
-                    <li className=""><NavLink to={'/about'}>About</NavLink></li>
-                    <li className=""><NavLink to={'/recipes'}>Recipes</NavLink></li>
+                    <li className=""><NavLink to={'/'} className="navlink">Home</NavLink></li>
+                    <li className=""><NavLink to={'/about'} className="navlink">About</NavLink></li>
+                    <li className=""><NavLink to={'/recipes'} className="navlink">Recipes</NavLink></li>
                     <li className="md:hidden"><ButtonLink route={'#'} text={'Browse Recipes'} className='rounded-lg' /></li>
                 </ul>
             </nav>

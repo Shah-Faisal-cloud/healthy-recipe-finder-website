@@ -58,11 +58,11 @@ p{
   color: var(--color-green-muted);
 }
 
-nav a{
+nav .navlink{
   position: relative;
 }
 
-nav a::after{
+nav .navlink::after{
   content: '';
   position: absolute;
   bottom: -6px;
@@ -75,8 +75,8 @@ nav a::after{
   transition: width 0.25s ease;
 }
 
-nav a:hover::after,
-nav a.active::after{
+nav .navlink:hover::after,
+nav .navlink.active::after{
   width: 100%;
 }
 

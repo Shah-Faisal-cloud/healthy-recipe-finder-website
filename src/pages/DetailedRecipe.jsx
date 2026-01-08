@@ -25,40 +25,40 @@ const DetailedRecipe = () => {
                 <div className="md:flex-1">
                     <p className="text-lg font-semibold">
                         <Link to={'/recipes'} className="text-green-muted/75">Recipes / </Link>
-                        <span className="text-green-deep">{recipe.title}</span>
+                        <span className="text-green-deep">{currentRecipe.title}</span>
                     </p>
                     <div className="rounded-lg overflow-hidden mt-4">
                         <picture>
-                        <source media="(min-width: 525px)" srcSet={`/images/${recipe.image.large}`} />
-                        <img src={`/images/${recipe.image.small}`} alt={`${recipe.title} image`} />
+                        <source media="(min-width: 525px)" srcSet={`/images/${currentRecipe.image.large}`} />
+                        <img src={`/images/${currentRecipe.image.small}`} alt={`${currentRecipe.title} image`} />
                     </picture>
                     </div>
                 </div>
                 <div className="md:flex-1">
                     <ContentBlock 
                         level={'h2'}
-                        title={recipe.title}
-                        description={recipe.overview}
+                        title={currentRecipe.title}
+                        description={currentRecipe.overview}
                         bottomElement={
                             <div className="flex flex-wrap gap-x-8 gap-y-3  text-green-deep text-lg">
                                 <div className="flex gap-x-2">
                                     <img src={iconServings} alt="" className='object-contain' />
-                                    <span>Servings: {recipe.servings}</span>
+                                    <span>Servings: {currentRecipe.servings}</span>
                                 </div>
                                 <div className="flex gap-x-2">
                                     <img src={iconPrepTime} alt="" className='object-contain' />
-                                    <span>Prep: {recipe.prepMinutes} Minutes</span>
+                                    <span>Prep: {currentRecipe.prepMinutes} Minutes</span>
                                 </div>
                                 <div className="flex gap-x-2">
                                     <img src={iconCookTime} alt="" className='object-contain' />
-                                    <span>Cook: {recipe.cookMinutes} Minutes</span>
+                                    <span>Cook: {currentRecipe.cookMinutes} Minutes</span>
                                 </div>
                             </div>
                         }
                     />
                     <div className="flex flex-col gap-y-4 mt-8">
-                        <List title={'Ingredients'} list={recipe.ingredients}/>
-                        <List title={'Instructions'} list={recipe.instructions}/>
+                        <List title={'Ingredients'} list={currentRecipe.ingredients}/>
+                        <List title={'Instructions'} list={currentRecipe.instructions}/>
                     </div>
                 </div>
             </section>
